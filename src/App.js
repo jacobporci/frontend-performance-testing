@@ -1,7 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import { cloneDeep } from "lodash";
+import "./App.css";
 
 function App() {
+  const x = cloneDeep({ test: "a" });
+
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +20,7 @@ function App() {
         >
           Learn React
         </a>
+        {x}
       </header>
     </div>
   );
